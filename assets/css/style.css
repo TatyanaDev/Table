@@ -1,62 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: system-ui;
+}
+
+main {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  display: flex;
+}
+
 table {
-  width: 100%;
+  border-collapse: collapse;
   text-align: center;
-  border-collapse: separate;
+  width: 1265px;
 }
-td {
-  padding: 25px;
-  font-family: sans-serif;
-}
+
 thead tr td {
-  color: white;
   vertical-align: middle;
-  font-size: 25px;
   font-weight: bolder;
-  line-height: 2em;
+  font-size: 25px;
+  color: #ffffff;
+  padding: 29px;
 }
+
 thead tr td:nth-child(1) {
-  background-color: #7887ab;
-  border-top-left-radius: 20px;
+  min-width: 300px;
 }
+
+thead tr td div:nth-child(1) {
+  margin-bottom: 40px;
+}
+
+thead tr td div:nth-child(2) {
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+thead tr td:nth-child(1) {
+  border-top-left-radius: 15px;
+  background-color: #7887ab;
+}
+
 thead tr td:nth-child(2) {
   background-color: #4f628e;
 }
+
 thead tr td:nth-child(3) {
   background-color: #2e4172;
 }
+
 thead tr td:nth-child(4) {
   background-color: #162955;
 }
+
 thead tr td:nth-child(5) {
+  border-top-right-radius: 15px;
   background-color: #061539;
-  border-top-right-radius: 20px;
 }
-.color tr:nth-child(odd) td:nth-child(odd) {
+
+tbody tr:nth-child(odd) td:nth-child(odd),
+tfoot tr:nth-child(odd) td:nth-child(odd) {
   background-color: #dbdbdb;
 }
-.color tr:nth-child(even) td:nth-child(even) {
+
+tbody tr:nth-child(even) td:nth-child(even),
+tfoot tr:nth-child(even) td:nth-child(even) {
   background-color: #f3f3f3;
 }
-.color tr:nth-child(even) td:nth-child(odd) {
+
+tbody tr:nth-child(even) td:nth-child(odd),
+tfoot tr:nth-child(even) td:nth-child(odd) {
   background-color: #ececec;
 }
-.color tr:nth-child(odd) td:nth-child(even) {
+
+tbody tr:nth-child(odd) td:nth-child(even),
+tfoot tr:nth-child(odd) td:nth-child(even) {
   background-color: #e7e7e7;
 }
-.color tr td:nth-child(1) {
+
+tbody tr td {
+  padding: 26px 40px;
+  font-size: 18px;
+}
+
+tbody tr td:nth-child(1) {
   text-align: left;
 }
 
+tfoot tr td {
+  padding: 20px;
+}
+
 tfoot td:first-child {
-  border-bottom-left-radius: 20px;
+  border-bottom-left-radius: 15px;
 }
+
 tfoot td:last-child {
-  border-bottom-right-radius: 20px;
+  border-bottom-right-radius: 15px;
 }
+
 button {
-  padding: 10px 65px;
   background-color: #d3d3d3;
+  border: 3px solid #b7b7b7;
+  padding: 15px 45px;
   font-weight: bold;
-  border-color: #bebebe;
   color: #636161;
 }
